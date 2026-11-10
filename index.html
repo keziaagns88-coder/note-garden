@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kezia 的筆記花園</title>
+  <meta name="description" content="我學 Python、歷史、設計和哲學時留下的筆記。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="wrap">
+    <!-- 首頁主視覺：一張植物標本紙，右下角貼著「花園概況」標籤 -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 id="site-title">Kezia 的筆記花園</h1>
+        <p id="site-description" class="hero-lede"></p>
+      </div>
+      <figure class="herbarium" aria-label="植物標本紙">
+        <svg class="sprig" viewBox="0 0 200 270" aria-hidden="true" focusable="false">
+          <path class="stem" d="M98 262 C 94 214, 112 168, 104 118 S 108 46, 120 14" />
+          <g class="leaves">
+            <g transform="translate(97 222) rotate(28) scale(-1 1)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+            <g transform="translate(103 192) rotate(-30) scale(0.95)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+            <g transform="translate(107 156) rotate(30) scale(-0.9 0.9)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+            <g transform="translate(104 124) rotate(-34) scale(0.82)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+            <g transform="translate(105 92) rotate(34) scale(-0.72 0.72)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+            <g transform="translate(109 62) rotate(-38) scale(0.6)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+            <g transform="translate(114 38) rotate(40) scale(-0.45 0.45)"><path class="leaf" d="M0 0 C12 -15 40 -17 56 -2 C40 11 12 12 0 0 Z"/><path class="vein" d="M3 0 Q 30 -4 54 -2"/></g>
+          </g>
+          <rect class="tape" x="84" y="232" width="30" height="9" transform="rotate(-7 99 236)" />
+          <rect class="tape" x="92" y="134" width="28" height="9" transform="rotate(6 106 138)" />
+        </svg>
+        <aside class="specimen-label hero-label" id="garden-census" aria-label="花園概況"></aside>
+      </figure>
+    </section>
+
+    <section class="browser" aria-labelledby="browse-heading">
+      <h2 id="browse-heading" class="section-title">所有筆記</h2>
+
+      <form class="filters" id="filters" role="search">
+        <div class="field">
+          <label for="q">搜尋筆記</label>
+          <input id="q" name="q" type="search" placeholder="輸入標題、摘要或標籤" autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <span class="filter-name" id="cat-label">分類</span>
+          <div class="chips" id="cat-filter" role="radiogroup" aria-labelledby="cat-label"></div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-name" id="status-label">成長狀態</span>
+          <div class="chips" id="status-filter" role="radiogroup" aria-labelledby="status-label"></div>
+        </div>
+        <div class="filter-row" id="tag-row" hidden>
+          <span class="filter-name">標籤</span>
+          <div class="chips" id="tag-filter"></div>
+        </div>
+      </form>
+
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <ul class="note-grid" id="note-grid"></ul>
+      <div class="empty" id="empty" hidden>
+        <p>沒有符合條件的筆記。換個關鍵字，或清除篩選看看全部筆記。</p>
+        <button type="button" class="button" id="clear-filters">清除篩選</button>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">關於這座花園</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>這裡是我的個人知識庫。學到新東西時，我會把它整理成一篇筆記，像把植物壓成標本一樣保存下來，之後複習或教別人時都找得到。</p>
+          <p>每篇筆記都是 <code>notes/</code> 資料夾裡的一個 Markdown 檔案。專案裡的 <code>AGENTS.md</code> 寫好了筆記的格式、命名方式和檢查流程，所以不管是我自己寫，還是請 AI 幫忙，新增的筆記都會長成一樣的格式，也會自動出現在這一頁。</p>
+        </div>
+        <div class="about-statuses">
+          <h3>筆記的成長狀態</h3>
+          <dl class="status-list" id="status-list"></dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <noscript><p class="wrap noscript">這個網站需要開啟 JavaScript 才能顯示筆記。</p></noscript>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>找不到這個頁面｜Kezia 的筆記花園</title>
+  <!-- GitHub Pages 會在任何路徑顯示這一頁，所以樣式寫在檔案內，不依賴相對路徑 -->
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #E9EEE8; color: #1E3328;
+           font-family: "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.7; }
+    .box { max-width: 30rem; margin: 1.5rem; padding: 2rem; background: #F7F9F5; border: 1px solid #1E3328;
+           box-shadow: inset 0 0 0 4px #F7F9F5, inset 0 0 0 5px #B9C8BC; }
+    h1 { font-family: "Noto Serif TC", "Noto Serif CJK TC", "Songti TC", "PMingLiU", serif; font-size: 1.75rem; margin: 0 0 .75rem; }
+    p { margin: 0 0 1rem; color: #4E6357; }
+    a { color: #2F6B4A; text-underline-offset: .2em; }
+    a:focus-visible { outline: 2px solid #2F6B4A; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <h1>找不到這個頁面</h1>
+    <p>這個網址沒有對應的頁面。它可能被移走了，或網址打錯了。</p>
+    <p><a id="home" href="/">回到所有筆記</a></p>
+  </main>
+  <script>
+    // 專案網站的網址是 https://帳號.github.io/note-garden/，所以首頁是第一段路徑
+    (function () {
+      var first = location.pathname.split('/').filter(Boolean)[0];
+      if (location.hostname.endsWith('github.io') && first) {
+        document.getElementById('home').href = '/' + first + '/';
+      }
+    })();
+  </script>
+</body>
+</html>
