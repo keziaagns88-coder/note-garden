@@ -1,0 +1,17 @@
+   # 每次 push 或開 Pull Request 時，自動檢查所有筆記是否符合 AGENTS.md 的規則
+   name: 檢查筆記
+
+   on:
+     push:
+     pull_request:
+
+   jobs:
+     check:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v4
+         - uses: actions/setup-python@v5
+           with:
+             python-version: "3.12"
+         - name: 檢查筆記格式與連結
+           run: python3 scripts/build_notes.py --check
