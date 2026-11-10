@@ -2,7 +2,7 @@
 
 我的個人知識庫：學 Python、歷史、設計和哲學時整理的筆記。每篇筆記都是一個 Markdown 檔案，網站會自動把它們變成可以搜尋、篩選、互相連結的網頁。
 
-- 網站：https:/keziaagns88-coder.github.io/note-garden/
+- 網站：https://keziaagns88-coder.github.io/note-garden/
 - 給 AI 的專案規則：[AGENTS.md](AGENTS.md)
 
 ## 新增一篇筆記
