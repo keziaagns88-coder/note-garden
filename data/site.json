@@ -1,0 +1,11 @@
+{
+  "title": "Kezia 的筆記花園",
+  "author": "Kezia",
+  "description": "我學 Python、歷史、設計和哲學時留下的筆記。每篇筆記會慢慢長大，從一顆種子，變成可以拿來教別人的常青筆記。",
+  "repo": "https://github.com/YOUR-USERNAME/note-garden",
+  "statuses": [
+    { "id": "seed", "icon": "🌱", "name": "種子", "description": "剛記下來，可能還不完整，或有待查證的地方。" },
+    { "id": "growing", "icon": "🌿", "name": "成長中", "description": "已經整理過、內容正確，但還會再補充。" },
+    { "id": "evergreen", "icon": "🌳", "name": "常青", "description": "內容完整穩定，我確認過，可以拿來教別人。" }
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  { "id": "python", "name": "Python 技巧", "color": "#2F5D8A", "description": "寫程式時學到的語法、寫法和常見陷阱。" },
+  { "id": "history", "name": "歷史", "color": "#86562A", "description": "歷史事件、人物和科技史。" },
+  { "id": "design", "name": "設計原則", "color": "#963A5A", "description": "排版、視覺和介面設計的基本原則。" },
+  { "id": "philosophy", "name": "哲學", "color": "#56498A", "description": "思想實驗和值得想一想的哲學問題。" }
+]

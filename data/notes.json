@@ -1,0 +1,179 @@
+{
+  "count": 7,
+  "notes": [
+    {
+      "id": "python-list-comprehension",
+      "title": "串列推導式（List Comprehension）",
+      "category": "python",
+      "status": "evergreen",
+      "tags": [
+        "語法",
+        "迴圈",
+        "串列"
+      ],
+      "summary": "用一行程式從舊的串列做出新的串列，比 for 迴圈加 append 更短、更好讀。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "python-is-vs-equal",
+        "python-f-string"
+      ],
+      "backlinks": [
+        "python-f-string",
+        "python-is-vs-equal"
+      ],
+      "chars": 784,
+      "minutes": 2
+    },
+    {
+      "id": "python-is-vs-equal",
+      "title": "is 和 == 的差別",
+      "category": "python",
+      "status": "growing",
+      "tags": [
+        "語法",
+        "物件",
+        "同一性"
+      ],
+      "summary": "== 問「內容一不一樣」，is 問「是不是同一個物件」。判斷 None 要用 is。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "philosophy-ship-of-theseus",
+        "python-list-comprehension"
+      ],
+      "backlinks": [
+        "philosophy-ship-of-theseus",
+        "python-list-comprehension"
+      ],
+      "chars": 785,
+      "minutes": 2
+    },
+    {
+      "id": "python-f-string",
+      "title": "f-string 字串格式化",
+      "category": "python",
+      "status": "seed",
+      "tags": [
+        "語法",
+        "字串"
+      ],
+      "summary": "在字串前面加 f，就能把變數和運算結果直接放進字串裡。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "python-list-comprehension"
+      ],
+      "backlinks": [
+        "python-list-comprehension"
+      ],
+      "chars": 625,
+      "minutes": 2
+    },
+    {
+      "id": "philosophy-ship-of-theseus",
+      "title": "忒修斯之船：零件全換掉，還是同一艘船嗎？",
+      "category": "philosophy",
+      "status": "growing",
+      "tags": [
+        "同一性",
+        "思想實驗"
+      ],
+      "summary": "一艘船的木板被一塊塊換掉，最後還是原本那艘船嗎？這是在問「同一個」到底是什麼意思。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "python-is-vs-equal"
+      ],
+      "backlinks": [
+        "python-is-vs-equal"
+      ],
+      "chars": 942,
+      "minutes": 2
+    },
+    {
+      "id": "history-voc-taiwan-indonesia",
+      "title": "荷蘭東印度公司：連起台灣和印尼的公司",
+      "category": "history",
+      "status": "growing",
+      "tags": [
+        "台灣史",
+        "印尼",
+        "大航海時代"
+      ],
+      "summary": "17 世紀的荷蘭東印度公司以巴達維亞（今雅加達）為亞洲總部，台灣南部的大員也歸它管理。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "history-gutenberg-printing"
+      ],
+      "backlinks": [
+        "history-gutenberg-printing"
+      ],
+      "chars": 1171,
+      "minutes": 3
+    },
+    {
+      "id": "history-gutenberg-printing",
+      "title": "古騰堡活字印刷：讓書可以大量複製",
+      "category": "history",
+      "status": "seed",
+      "tags": [
+        "印刷",
+        "科技史",
+        "歐洲史"
+      ],
+      "summary": "1450 年代，古騰堡把金屬活字、油性墨水和壓印機組成一套系統，讓歐洲的書可以快速大量複製。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "design-crap-principles",
+        "history-voc-taiwan-indonesia"
+      ],
+      "backlinks": [
+        "design-crap-principles",
+        "history-voc-taiwan-indonesia"
+      ],
+      "chars": 968,
+      "minutes": 2
+    },
+    {
+      "id": "design-crap-principles",
+      "title": "版面設計四原則：對比、重複、對齊、親近",
+      "category": "design",
+      "status": "growing",
+      "tags": [
+        "排版",
+        "視覺層級"
+      ],
+      "summary": "讓版面好讀的四個基本原則，做簡報、海報、履歷都用得到。",
+      "created": "2026-11-10",
+      "updated": "2026-11-10",
+      "links": [
+        "history-gutenberg-printing"
+      ],
+      "backlinks": [
+        "history-gutenberg-printing"
+      ],
+      "chars": 971,
+      "minutes": 2
+    }
+  ],
+  "tags": {
+    "語法": 3,
+    "同一性": 2,
+    "串列": 1,
+    "印刷": 1,
+    "印尼": 1,
+    "台灣史": 1,
+    "大航海時代": 1,
+    "字串": 1,
+    "思想實驗": 1,
+    "排版": 1,
+    "歐洲史": 1,
+    "物件": 1,
+    "科技史": 1,
+    "視覺層級": 1,
+    "迴圈": 1
+  }
+}
